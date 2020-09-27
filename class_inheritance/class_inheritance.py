@@ -2,12 +2,12 @@ class Device:
     """
     This is the device class.
     """
-    def __init__(self, name, connected_by):
+    def __init__(self, name: str, connected_by: str):
         self.name = name
         self.connected_by = connected_by
         self.connected = True
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Device {self.name!r} ({self.connected_by})"
 
     def disconnected(self):
